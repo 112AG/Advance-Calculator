@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="utils.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <header>
+            <a href=""><img src="img/logo/2Advance_Math-removebg-preview.png" alt=""></a>
+            <h2>make <span>fun</span> with your problems</h2>
+            <div>
+                <ul>
+                    <li><a class="active" href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Features</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section id="page1">
+            <div class="text-section">
+                <h1>Solve Your Maths Doubts</h1>
+                <h3>Get Answer quickly</h3>
+                <p>On this site you able to solve your basics math problems as like: Calculator, find Squre and cubes, roots, etc</p>
+                <a href="#page2">Start Now</a>
+            </div>
+            <section class="image-section">
+                <img src="img/banner/banner1.jpg" class="banner-image" alt="">
+            </section>
+        </section>
+
+        <div class="hr-line" style="background-color: white;"></div>
+
+        <section id="page2" class="padding-section">
+            <h1 class="text-center">Calculate Your Problems here</h1>
+            <div id="contain">
+                <div class="cal">
+                    <h1>Calculator</h1>
+                    <div class="container flex flex-col items-center mx-auto m-w-20">
+                      <div class="row">
+                        <input class="input" type="text"/>
+                      </div>
+                      <div class="row">
+                        <button class="button">C</button>
+                        <button class="button">%</button>
+                        <button class="button">M+</button>
+                        <button class="button">M-</button>
+                      </div>
+                      <div class="row">
+                        <button class="button">7</button>
+                        <button class="button">8</button>
+                        <button class="button">9</button>
+                        <button class="button">*</button>
+                      </div>
+                      <div class="row">
+                        <button class="button">4</button>
+                        <button class="button">5</button>
+                        <button class="button">6</button>
+                        <button class="button">/</button>
+                      </div>
+                      <div class="row">
+                        <button class="button">1</button>
+                        <button class="button">2</button>
+                        <button class="button">3</button>
+                        <button class="button">+</button>
+                      </div>
+                      <div class="row">
+                        <button class="button">0</button>
+                        <button class="button">.</button>
+                        <button class="button">=</button>
+                        <button class="button">-</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="image-section long-height">
+                    <img src="img/banner/Calculator.jpg" class="banner-image" alt="">
+                </div>
+            </div>
+        </section>
+
+        <div class="hr-line"></div>
+
+        <section id="page3">
+            <div id="body">
+                <div class="block">
+                    <h1>Find Prime Numbers Between Two Numbers</h1>
+                    <label for="start">Enter the first number:</label>
+                    <input type="number" id="start" required>
+                    <label for="end">Enter the second number:</label>
+                    <input type="number" id="end" required>
+                    <button onclick="findPrimes()" class="block-btn">Find Primes</button>
+                    <p id="result"></p>
+                </div>
+                <p>A Number that can be divided exactly only by itself and 1 is called Prime Number, for example 7, 17 and 41</p>
+            </div>
+        </section>
+
+        <div class="hr-line" style="background-color: white;"></div>
+        
+        <section id="page4">
+            <div id="body2">
+                <div class="block">
+                    <h1>Find Composite Numbers Between Two Numbers</h1>
+                    <label for="starter">Enter the first number:</label>
+                    <input type="numbers" id="starter" required>
+                    <label for="ends">Enter the second number:</label>
+                    <input type="numbers" id="ends" required>
+                    <button onclick="findComposites()" class="block-btn">Find Composites</button>
+                    <p id="results"></p>
+                </div>
+                <p>A composite number is a positive integer that has more than two factors, for example 4, 6, and 9.</p>
+            </div>
+        </section>
+
+        <div class="hr-line"></div>
+
+        <section id="page5">
+            <p>A square number is a number multiplied by itself.<br>A cube number is a number multiplied by itself 3 times.</p>
+            <div class="main">
+                <div class="squ-cube">
+                    <h1>Square and Cube Calculator</h1>
+                    <input type="numbe" id="numberInput" placeholder="Enter a number">
+                    <button onclick="calculate()" class="block-btn">Calculate</button>
+                    <div id="res"></div>
+                </div>
+                <div class="cube-image">
+                    <img src="img/banner/cube-removebg-preview.png" alt="" class="imgss">
+                </div>
+            </div>
+        </section>
+
+        <div class="hr-line"></div>
+
+        <section id="page6" class="padding-section">
+            <div class="main">
+                <p>Find any table of the number.</p>
+                <div class="unique-container">
+                    <h1>Multiplication Table Generator</h1>
+                    <input type="number" id="uniqueNumberInput" placeholder="Enter a number">
+                    <button onclick="generateUniqueTable()">Generate Table</button>
+                    <div id="uniqueTableOutput"></div>
+                </div>
+            </div>
+            <div class="main">
+                <p>Check which number is divisible by how many numbers.</p>
+                <div class="custom-container">
+                    <h1>Divisors Finder</h1>
+                    <input type="number" id="customNumberInput" placeholder="Enter a number">
+                    <button onclick="findCustomDivisors()">Find Divisors</button>
+                    <div id="customDivisorsOutput"></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="hr-line"></div>
+
+        <section id="page7" class="padding-section">
+            <div class="main">
+                <img src="img/banner/square-removebg-preview.png" alt="">
+                <div class="root-container">
+                    <h1>Square Root Calculator</h1>
+                    <input type="text" id="inputCount" placeholder="Enter a number or a square root">
+                    <button onclick="calculaters()">Calculate</button>
+                    <p id="resultend"></p>
+                </div>
+            </section>
+
+            <footer>
+                <div id="footer-content">
+                    <div class="contact-info">
+                        <h3>Contact Us</h3>
+                        <p>Address: Varanasi,Uttar Pradesh, India</p>
+                        <p>Phone: +91 6388521272</p>
+                        <p>Email: info@example.com</p>
+                    </div>
+                    <div class="social-media">
+                        <h3>Follow Us</h3>
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                    <div class="legal-info">
+                        <h3>Legal</h3>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                    <div class="newsletter">
+                        <h3>Subscribe to our Newsletter</h3>
+                        <input type="email" placeholder="Enter your email">
+                        <button onclick="subscribeNewsletter()">Subscribe</button>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2024 Advance Math Calculator. All rights reserved.</p>
+                </div>
+            </footer>
+        
+        </div>
+
+        
+
+    <script src="script.js"></script>
+</body>
+</html>
